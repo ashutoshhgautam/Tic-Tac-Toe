@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    background-color: #eef3f9;
+    color: #35404e;
+    margin-top: 50px;
+    font-family:monospace;
+}
+
+#status {
+    font-weight: bold;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cell {
+    height: 80px;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.cell:empty:hover {
+    background-color: #ddeaff;
+}
+
+#reset {
+    padding: 9px 16px;
+    color: white;
+    background-color: #080b0f;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
