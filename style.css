@@ -1,42 +1,33 @@
 body {
+    background-color: #fff8e7;
+    color: #333;
     text-align: center;
-    background-color: #eef3f9;
-    color: #35404e;
-    margin-top: 50px;
-    font-family:monospace;
-}
-
-#status {
-    font-weight: bold;
+    margin-top: 40px;
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: 80px 80px 80px;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     margin: 20px 0;
-}
-
-button {
-    cursor: pointer;
 }
 
 .cell {
     height: 80px;
     background-color: white;
-    border: 1px solid #000000;
-    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.cell:empty:hover {
-    background-color: #ddeaff;
+.cell:hover {
+    background-color: #f3e8cf;
 }
 
 #reset {
-    padding: 9px 16px;
-    color: white;
-    background-color: #080b0f;
-    border: 1px solid #000000;
-    border-radius: 2px;
+    background-color: #e5efdc;
+    border: 1px solid #333;
+    padding: 6px 14px;
+    cursor: pointer;
 }
